@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace EjemploBlazor.Entidad;
 
 public class Persona
 {
-    string? Nombre { get; set; }
-    string? Ocupacion { get; set; }
+    [Key]
+    public int PersonaId { get; set; }
+    public string? Nombre { get; set; }
+    public string? Ocupacion { get; set; }
 }
