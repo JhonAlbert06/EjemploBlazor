@@ -1,0 +1,60 @@
+@page "/RegistroPersona"
+
+<EditForm Model="persona">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group col">
+                <label>Nombre: </label>
+                <InputText class="form-control" @bind-Value="persona.Nombre" />
+            </div>
+            <div class="form-group col">
+                <label>Ocupacion: </label>
+                <InputText class="form-control" @bind-Value="persona.Ocupacion" />
+            </div>
+        </div>
+        <div class="card-footer">
+                @* Botones *@
+                <div class="form-group text-center" display: inline-block>
+
+                    <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo">
+                        <span class="oi oi-plus"> Nuevo</span>
+                    </button>
+
+                    <button type="submit" class="btn btn-lg btn-success">
+                        <span class="oi oi-folder"> Guardar</span>
+                    </button>
+
+                    <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">
+                        <span class="oi oi-trash"> Eliminar</span>
+                    </button>
+
+                </div>
+            </div>
+    </div>
+</EditForm>
+
+@using EjemploBlazor.Entidad;
+
+@code
+{
+    public Persona persona { get; set; } = new Persona();
+
+    public void Buscar()
+    {
+
+    }
+
+    public void Nuevo()
+    {
+
+    }
+
+    public void Guardar()
+    {
+
+    }
+    public void Eliminar()
+    {
+
+    }
+}
